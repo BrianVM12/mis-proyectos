@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* *************************HOME***************************** */
+h1{font-size: 3.5em; margin: 0;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.50em; margin: 0;}
+ul{list-style: none;}ç
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0,0.5);
+    color: white;
+    background-color:royalblue;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.acento{
+    color: blue;
+}
+
+header{
+    background-color: rgb(221, 221, 221, 0.9);
+}
+header .logo{   
+    text-decoration: none;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(30, 80, 189);
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* para ocurtar el menu prueba 
+ .checkbtn{
+    float: right;
+    display: flex;
+}
+#check{
+    
+}
+@media (max-width:845px) {
+    header nav a{
+        display: block;
+        width: 100%;
+        height: 10vh;
+        left: 0;
+        background-color: rgba(0, 0, 0,0.5);
+        top: 150px;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    #check:checked ~ nav a{
+        height: 100vh;
+    }
+} */
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 15px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blue;
+    background-color: rgba(0, 0, 0,0.3);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+    font-size: 2.5em;
+}
+#hero button{
+    font-size: 1.75em;  
+}
+
+#descripcion .container{
+    text-align: center;
+    padding: 80px 12px;
+
+}
+.descripcionn .container{
+    background-color: rgba(0, 0, 0,0.9);
+    color: white;
+
+}
+.descripcion{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+/* de progrmas */
+.descripcion .texto{
+        text-align: initial;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+}
+
+
+#programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#programas .container{
+    padding: 16px 12px;
+}
+#programas .container h2{
+    margin-top: 0;
+    font-size: 2em;
+}
+#programas .container p{
+    display: none;
+}
+#programas .carta{
+    background-size: cover;
+    background-position: center center; 
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url("media/1200px-HTML5_logo.png ");
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url("media/250px-CSS3_logo.png");
+
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url("media/front-end.jpg ");
+}
+
+#caracteristica .container{
+    text-align: center;
+    padding: 170px 12px;
+    align-items: center;
+}
+#caracteristica .container h2{
+    font-weight: bold;
+    padding-left: 35px;
+}
+#caracteristica li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#iniciar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(30,30,30);
+    color: white;
+    
+}
+#iniciar h2{
+    font-size: 5vw;
+}
+#iniciar button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
+/**********************Contacto**********************/
+
+.form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgba(0, 0, 0,0.9);
+}
+
+.form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+.form input[type="text"],
+.form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+ .form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}  
+
+.form input[type="submit"]:hover{
+	cursor:pointer;
+    background-color: green;
+    color: white;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+/*********************fin*************************/
+
+/* adactacion de movil a pc */
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header.conteiner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* .checkbtn{
+        display: none;
+    }
+    #check{
+        display: none;
+    } */
+
+    header .logo{
+        padding: 15px 400px 15px 30px;
+    }
+    header nav{
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 3.5em;
+    }
+
+    #descripcion .container{    
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #descripcion .fondo{
+        background-color: rgb(221, 221, 221, 0.9);
+        padding: 10px;
+
+    }
+
+    #descripcion .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 20px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #descripcion h2{
+        margin-top: 0px;
+    }
+    #descripcion h3{
+        margin: 0px;
+    }
+    #descripcion .img-container{
+        background-image: url("media/bien.jpg ");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 400px;
+    }
+/* ******************nosotros************************ */
+    #descripcion .img{
+        background-image: url("media/nosotros1.png");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 550px;
+
+}
+/* ******************fin************************* */
+
+
+/* ******************programas************************ */
+#descripcion .img-html{
+    background-image: url("media/1200px-HTML5_logo.png");
+    background-size: cover;
+    background-position: center center;
+    height: 320px;
+    width: 400px;
+    justify-content: center;
+}
+#descripcion .img-css{
+    background-image: url("media/250px-CSS3_logo.png");
+    background-size: cover;
+    background-position: center center;
+    height: 320px;
+    width: 400px;
+    justify-content: center;
+}
+#descripcion .img-js{
+    background-image: url("media/front-end.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 320px;
+    width: 400px;
+    justify-content: center;
+}
+li:hover{
+    color: darkslateblue;
+
+}
+.descripcion{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+/* ******************fin************************* */
+
+    #programas .programacarta{
+        display: flex;
+        justify-content: center;
+
+    }
+    #programas .carta{
+            background-size: 100% 120px;
+            background-repeat: no-repeat;
+            background-position-y: 0;
+            background-color: rgba(0, 0, 0,0.3);
+    }
+    #programas .carta:hover{
+        box-shadow: 15px 15px 40px rgba(0,0,0,0.9);
+}
+    #programas .carta p{
+        display: block;
+        margin-bottom: 30px;
+                
+    }
+    #programas .container h2{
+        font-size: 2em;
+    }
+    #programas .carta h3{
+        margin-top: 0px;
+                
+    }
+    #programas .carta{
+        padding: 60px;
+        
+    }
+
+    #caracteristica{
+        background-image: url("media/bien2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 400px 350px;
+        background-position: calc(100vw - 400px) 120px;
+    }
+    #caracteristica .container{
+        text-align: initial;
+    }
+    #caracteristica ul{
+        margin-left: 150px;
+    }
+    #caracteristica .container h2{
+        padding-left: 60px;
+    }
+
+    footer .container{
+        justify-content: right;
+
+    }
+
+@media (min-width: 1200px) {
+        #caracteristica{
+            background-position-x: calc(100vw - 500px );
+        }
+
+        
+    }
+
+}
